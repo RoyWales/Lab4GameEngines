@@ -17,7 +17,7 @@ public class PlayerCollision : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "enemy")
+        if (other.gameObject.tag == "enemy") //observer pattern bellow
         {
             #region observer
             collide.Invoke();
